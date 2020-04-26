@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 	    font-family: "Noto Sans", sans-serif;
 }
 
-.site-header, .main-navigation, .social-navigation, .wiget {
+.main-navigation, .social-navigation, .wiget {
 	margin-bottom: 10%;
 }
 
@@ -30,13 +30,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -30px;
 }*/
 
+.hentry + .hentry {
+	margin-top: 0 !important;
+}
+
 .entry-content a {
     color: orangered;
 		border-bottom: none;
-}
-
-.entry-content, .entry-summary {
-    padding: 0 10%;
 }
 
 ul {
@@ -62,7 +62,15 @@ footer {
 
 /* Aside */
 .format-aside {
-	background-color: #f7f5e7;
+	background-color: #f7f7f7;
+}
+
+.format-aside .entry-content {
+	color: #4f4f4f;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: smaller;
+	padding: 0 10%;
 }
 
 .blog .format-aside:first-of-type,
